@@ -1,0 +1,158 @@
+/* === Global === */
+body {
+    background-image: url("masuk.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Container Frame === */
+.Frame {
+    background-color: #181A1CD6;
+    border-radius: 16px;
+    padding: 40px;
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+/* === Header === */
+.Header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.logo-chill {
+    height: 55px;
+}
+
+.Header h1 {
+    margin-bottom: 8px;
+}
+
+p {
+    color: white;
+    margin: 0;
+    margin-bottom: 10px;
+    letter-spacing: 0.2px;
+}
+
+/* === Input Field === */
+.Username,
+.Konfirmasi-Kata-Sandi {
+    margin-bottom: 30px;
+}
+
+.Username p,
+.Konfirmasi-Kata-Sandi p {
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    font-size: 16px;
+    padding: 14px 20px;
+    border-radius: 24px;
+    border: 1px solid #E7E3FC3B;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* === Teks Tambahan === */
+.Belum-Punya-Akun {
+    color: #C1C2C4;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.Lupa {
+    float: right;
+    color: #C1C2C4;
+    font-size: 14px;
+}
+
+/* === Tombol Masuk === */
+.Masuk {
+    margin-bottom: 20px;
+}
+
+.Masuk button {
+    width: 100%;
+    background-color: #3D4142;
+    color: white;
+    font-size: 16px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.Masuk p {
+    text-align: center;
+    margin: 16px 0;
+    color: #9D9EA1;
+}
+
+/* === Masuk dengan Google === */
+.Masuk-Google button {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 14px 20px;
+    border: 1px solid #E7E3FC3B;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.logo-google {
+    width: 16px;
+    height: 16px;
+}
+
+/* === Responsif untuk layar kecil === */
+@media (max-width: 480px) {
+    .Frame {
+        padding: 24px;
+    }
+
+    .logo-chill {
+        height: 40px;
+    }
+
+    input,
+    button {
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+
+    .Lupa {
+        float: none;
+        display: block;
+        margin-top: 8px;
+        text-align: right;
+    }
+
+    .Masuk p {
+        font-size: 14px;
+    }
+
+    .Belum-Punya-Akun {
+        font-size: 13px;
+        text-align: left;
+    }
+}

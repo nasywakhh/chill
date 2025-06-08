@@ -1,0 +1,356 @@
+body {
+    font-family: 'Lato';
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+
+.navbar {
+    background-color: #22282A;
+    width: 100%;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.avatar {
+    height: 40px;
+    border-radius: 50px;
+}
+
+.navbar a {
+    color: white;
+}
+
+.material-icons {
+    color: white;
+    padding-right: 80px;
+    margin-left: auto;
+}
+
+.logo-chill {
+    height: 21.47px;
+    padding-left: 80px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+    position: relative;
+}
+
+.menu {
+    color: white;
+    background-color: #22282A;
+    padding: 20px;
+    font-size: 16px;
+    top: 120%;
+    left: -30%;
+    position: absolute;
+    display: none;
+    z-index: 10;
+    border-radius: 4px;
+    width: 156px;
+    height: 100px;
+}
+
+.menu div {
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    color: white;
+    padding-top: 32px;
+    padding-bottom: 20px;
+}
+
+.daftar-saya {
+    width: calc(100% - 160px);
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.film-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.film-item {
+    width: 210px;
+    height: 310px;
+    position: relative;
+}
+
+.film-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.film-item p {
+    position: absolute;
+    right: 12px;
+    color: white;
+    z-index: 1;
+    margin: 0;
+    top: 0;
+    border: 1px solid #B71F1D;
+    background-color: #B71F1D;
+    width: 31px;
+    height: 48px;
+    border-radius: 0 4px 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.film-item p2 {
+    position: absolute;
+    left: 12px;
+    color: white;
+    z-index: 1;
+    margin: 0;
+    top: 12px;
+    border: 1px solid #0F1E93;
+    background-color: #0F1E93;
+    width: 104px;
+    height: 28px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+hr {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 250px 1fr 180px;
+    align-items: start;
+    color: white;
+    margin: 0 80px 80px 80px;
+    gap: 0 200px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    width: 250px;
+    align-items: center;
+}
+
+.logo img {
+    height: 64px;
+}
+
+.genre {
+    flex-grow: 1;
+    margin: 0 40px;
+    padding-bottom: 6px;
+}
+
+.genre table {
+    width: auto;
+    table-layout: auto;
+}
+
+.genre td {
+    padding-right: 16px;
+    white-space: nowrap;
+}
+
+.bantuan {
+    width: 180px;
+    padding-bottom: 28px;
+}
+
+.thumbnail {
+    height: 494.29px;
+    width: 409.29px;
+    background-color: #181A1C;
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.img-thumbnail {
+    height: 254px;
+    width: 408px;
+    border-radius: 20px 20px 0 0;
+}
+
+.thumbnail p {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.play img {
+    height: 55px;
+    width: 55px;
+    filter: invert(1);
+    margin-top: 10px;
+}
+
+.play {
+    display: flex;
+    margin: 15px;
+}
+
+.play2 {
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown {
+    margin-left: auto;
+}
+
+.genre2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.thumbnail-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.thumbnail-modal {
+    height: 494.29px;
+    width: 409.29px;
+    background-color: #181A1C;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.thumbnail-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.thumbnail-close:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.thumbnail-modal .img-thumbnail {
+    height: 254px;
+    width: 408px;
+    border-radius: 20px 20px 0 0;
+}
+
+.thumbnail-modal p {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.thumbnail-modal .play img {
+    height: 55px;
+    width: 55px;
+    filter: invert(1);
+    margin-top: 10px;
+}
+
+.thumbnail-modal .play {
+    display: flex;
+    margin: 15px;
+}
+
+.thumbnail-modal .play2 {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail-modal .dropdown {
+    margin-left: auto;
+}
+
+.thumbnail-modal .genre2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+/* Hover effect untuk film items */
+.film-item,
+.film-item-2,
+.film-item-3,
+.film-item-4 {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.film-item:hover,
+.film-item-2:hover,
+.film-item-3:hover,
+.film-item-4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.film-item img,
+.film-item-2 img,
+.film-item-3 img,
+.film-item-4 img {
+    transition: brightness 0.3s ease;
+}
+
+.film-item:hover img,
+.film-item-2:hover img,
+.film-item-3:hover img,
+.film-item-4:hover img {
+    filter: brightness(1.1);
+}

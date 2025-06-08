@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" link href="individual.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="logo.png" class="logo-chill">
+        <a href="series.html">Series</a>
+        <a href="film.html">Film</a>
+        <a href="daftar.html">Daftar Saya</a>
+        <div class="profile" onclick="toggleMenu()">
+            <img src="avatar.png" class="avatar">
+            <i class="material-icons">&#xe313;</i>
+            <div id="dropdown-menu" class="menu">
+                <div>Profil Saya</div>
+                <a href="belumberlangganan.html">
+                    <div>Ubah Premium</div>
+                </a>
+                <a href="daftar.html">
+                    <div>Keluar</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="ringkasan-pembayaran">
+        <h2>Ringkasan Pembayaran</h2>
+        <div class="frame">
+            <div class="paket-langganan">
+                <div class="pilihan">
+                    <p class="paket">Keluarga</p>
+                    <p>Mulai dari Rp159,990/bulan<br>5-7 akun</p>
+                    <div class="list">
+                        <p>✓ Tidak ada iklan</p>
+                        <p>✓ Kualitas 4K</p>
+                        <p>✓ Download konten pilihan</p>
+                    </div>
+                </div>
+                <a href="keluarga.html"><button class="langganan">Langganan</button></a>
+                <p class="p2">Syarat dan ketentuan berlaku</p>
+            </div>
+            <div class="metode">
+                <h5>Metode Pembayaran</h5>
+                <div class="rekening">
+                    <div class="bank">
+                        <input type="radio" class="radio">
+                        <img src="visa.png">
+                        <img src="jcb.png">
+                        <img src="ae.png">
+                        <p>Kartu Debit/Kredit</p>
+                    </div>
+                    <div class="bank">
+                        <input type="radio" class="radio">
+                        <img src="bca.png">
+                        <p>BCA Virtual Account</p>
+                    </div>
+                </div>
+                <h5>Kode Voucher (Jika ada)</h5>
+                <div class="voucher">
+                    <input type="text" placeholder="Masukkan kode voucher" class="input-kode" />
+                    <button>Gunakan</button>
+                </div>
+                <h5>Ringkasan Transaksi</h5>
+                <div class="transaksi">
+                    <div class="biaya">
+                        <p>Paket Premium Individual</p>
+                        <p>Rp159.000,00</p>
+                    </div>
+                    <div class="biaya">
+                        <p>Biaya Administrasi</p>
+                        <p>Rp3.000,00</p>
+                    </div>
+                    <div class="biaya">
+                        <p>Total Pembayaran</p>
+                        <p>Rp162.000,00</p>
+                    </div>
+                </div>
+                <a href="pembayaran.html"><button class="bayar">Bayar</button></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer class="footer">
+        <div class="logo">
+            <img src="logo.png">
+            <p>@2023 Chill All Rights Reserved.</p>
+        </div>
+        <div class="genre">
+            <strong>Genre</strong>
+            <table>
+                <tr>
+                    <td>Aksi</td>
+                    <td>Drama</td>
+                    <td>Komedi</td>
+                    <td>Sains & Alam</td>
+                </tr>
+                <tr>
+                    <td>Anak-anak</td>
+                    <td>Fantasi Ilmial</td>
+                    <td>Petualangan</td>
+                    <td>Thriller</td>
+                </tr>
+                <tr>
+                    <td>Anime</td>
+                    <td>Kejahatan</td>
+                    <td>Perang</td>
+                </tr>
+                <tr>
+                    <td>Britania</td>
+                    <td>KDrama</td>
+                    <td>Romantis</td>
+                </tr>
+            </table>
+        </div>
+        <div class="bantuan">
+            <strong>Bantuan</strong>
+            <table>
+                <tr>
+                    <td>FAQ</td>
+                </tr>
+                <tr>
+                    <td>Kontak Kami</td>
+                </tr>
+                <tr>
+                    <td>Privasi</td>
+                </tr>
+                <tr>
+                    <td>Syarat & Ketentuan</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+    <script src="beranda.js"></script>
