@@ -136,6 +136,43 @@
             </table>
         </div>
     </footer>
-    <script src="beranda.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filmGallery = document.querySelector(".film-gallery");
+
+            // Ambil data dari localStorage
+            let myList = JSON.parse(localStorage.getItem("myList")) || [];
+
+            // Kosongkan isi film-gallery dulu
+            filmGallery.innerHTML = "";
+
+            // Tampilkan tiap film
+            myList.forEach((film, index) => {
+                const filmItem = document.createElement("div");
+                filmItem.className = "film-item";
+
+                const top10Text = film.top10 ? `<p>Top 10</p>` : '';
+                const episodeBaruText = film.episodeBaru ? `<p2>Episode Baru</p2>` : '';
+
+                filmItem.innerHTML = `
+                        <img src="${film.image}" alt="${film.title}">
+                        ${top10Text}
+                        ${episodeBaruText}
+                        <button class="hapus-btn" onclick="removeFromMyList(${index})">Hapus</button>
+                    `;
+
+                filmGallery.appendChild(filmItem);
+            });
+        });
+
+        // Fungsi hapus dari daftar saya
+        function removeFromMyList(index) {
+            let myList = JSON.parse(localStorage.getItem("myList")) || [];
+            myList.splice(index, 1); // hapus 1 item berdasarkan index
+            localStorage.setItem("myList", JSON.stringify(myList));
+            location.reload(); // refresh halaman supaya daftar update
+        }
+    </script>
+                  
 </body>
 </html>
